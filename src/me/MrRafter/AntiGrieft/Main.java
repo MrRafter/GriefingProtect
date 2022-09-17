@@ -99,13 +99,7 @@ public final class Main extends JavaPlugin implements Listener
                         String message = (String) packet
                                 .getSpecificModifier(String.class).read(0)
                                 .toLowerCase();
-                        /**
-                         * A space is added to chat for every time you press tab
-                         * when we check for 1 space, we check for /[TAB], and
-                         * when we check for 2 spaces, we listen for /<CMD>
-                         * [TAB]. This way we can effectively cancel /ver [TAB]
-                         * as well.
-                         */
+
 
                         if ((message.startsWith("/") && !message.contains(" "))
                                 || (message.startsWith("/" + plugins) && !message.contains(" "))
