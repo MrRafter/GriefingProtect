@@ -1,0 +1,118 @@
+# Made by MrRafter
+# Plugin Made For AtlantisMC
+# If you have any problems please contact me through discord: MrRafter_#4660
+
+#AntiCommandTab
+# You can choose to disable command protection here:
+BlockPlugins: true
+BlockVersion: true
+BlockAbout: true
+BlockQuestionMark: true
+
+#Sent to players attempting use /plugins and /pl
+Plugins: '&b&lGriefingProtect&8&l >> &cYou do not have sufficient permissions'
+
+#Sent to players attempting use /?
+QuestionMark: '&b&lGriefingProtect&8&l >> &cYou do not have sufficient permissions'
+
+#Sent to players attempting use /about
+About: '&b&lGriefingProtect&8&l >> &cYou do not have sufficient permissions'
+
+#Sent to players attempting use /version and /ver
+Version: '&b&lGriefingProtect&8&l >> &cYou do not have sufficient permissions'
+
+
+#Messages to send to the player when trying to place illegal blocks
+IllegalBlock-Place:
+  Enabled: true
+  Bedrock: '&cWhat do you do! This is not allowed'
+  Barrier: '&cWhat do you do! This is not allowed'
+  End_Portal_Frame: '&cWhat do you do! This is not allowed'
+  Mob_Spawner: '&cWhat do you do! This is not allowed'
+
+
+#Use the symbol "/" to make it work correctly
+NO_PERMISSIONS: '&b&lGriefingProtect&8&l >> &cYou do not have sufficient permissions'
+BLOCK_COMMANDS:
+  - /pl
+  - /plugins
+  - /bukkit:plugins
+  - /bukkit:pl
+  - /bukkit:help
+  - /bukkit:ver
+  - /bukkit:?
+  - /bukkit:
+  - /me
+  - /?
+  - /minecraft:me
+  - /minecraft:tell
+  - /minecraft:op
+  - /minecraft:pardon-ip
+  - /minecraft:pardon
+  - //calc for(i=0;i<256;i++){for(j=0;j<256;j++){for(k=0;k<256;k++){for(l=0;l<256;l++){ln(pi)}}}}
+  - /calc for(i=0;i<256;i++){for(j=0;j<256;j++){for(k=0;k<256;k++){for(l=0;l<256;l++){ln(pi)}}}}
+  - /calculate
+  - //calculate
+  - /evaluate
+  - //evaluate
+  - /solve
+  - //solve
+  - //eval
+  - /eval
+  - /op
+  - /reload
+  - /stop
+  - /pt bc
+  - /pt
+  - /bc
+  - /say
+  - /example
+  - /test
+  - /set 0
+  - //set 0
+  - //set lava
+  - /set lava
+  - //wand
+  - //worldedit:wand
+
+
+#COMMAND WHITELIST
+CommandWhitelist: fasse
+#Should I let op users type these commands?
+AllowOPStobypass: false
+CommandsWhitelisted:
+  - /help
+  - /msg
+  - /kill
+  - /discord
+  - /togglechat
+  - /toggletells
+  - /ignore
+  - /ignorelist
+  - /toggledeathmsg
+  - /stats
+  - /tps
+  - /w
+  - /m
+  - /t
+  - /pm
+  - /tell
+  - /whisper
+  - /r
+  - /reply
+
+
+#Command /help
+help:
+  - "&7---------------------------------------------"
+  - "&aThanks For Using GriefingProtect You Can"
+  - "&aEverything is modifiable, GriefingProtect is the"
+  - "&aBetter to protect your server"
+  - "&7---------------------------------------------"
+
+# /say %message%
+Say:
+  Format: "&bGriefingProtect&c: &e%message%"
+
+#Should we unop the player on exit?
+DeopOnLeave: true

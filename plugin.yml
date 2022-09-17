@@ -1,0 +1,6 @@
+name: GriefingProtect
+version: 1.0
+main: me.MrRafter.AntiGrieft.Main
+depend: [ProtocolLib]
+authors: [ MrRafter ]
+description: GriefingProtect is a plugin that will protect your server from being hacked
